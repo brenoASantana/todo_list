@@ -1,4 +1,5 @@
 package src;
+
 import java.util.Scanner;
 
 public class TodoList {
@@ -6,14 +7,14 @@ public class TodoList {
         int numero = 0;
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("Bem-vindo à Lista de Tarefas!\n"
-                             + "1. Adicionar Tarefa\n"
-                             + "2. Remover Tarefa\n"
-                             + "3. Marcar Tarefa como Concluída\n"
-                             + "4. Listar Tarefas\n"
-                             + "5. Limpar Tarefas Concluídas\n"
-                             + "6. Sair\n"
-                             + "Escolha uma opção:");
-            
+                    + "1. Adicionar Tarefa\n"
+                    + "2. Remover Tarefa\n"
+                    + "3. Marcar Tarefa como Concluída\n"
+                    + "4. Listar Tarefas\n"
+                    + "5. Limpar Tarefas Concluídas\n"
+                    + "6. Sair\n"
+                    + "Escolha uma opção:");
+
             int opcao = scanner.nextInt();
 
             switch (opcao) {
@@ -56,7 +57,7 @@ public class TodoList {
     }
 
     private static void marcarTarefaComoConcluida(int numero) {
-        // Marca a tarefa como concluída            
+        // Marca a tarefa como concluída
     }
 
     private static void listarTarefas() {
